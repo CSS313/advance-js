@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul { 
+            padding: 0px;
+        }
+        li {
+            margin: 2rem;
+            float: left;
+            width: auto;
+            list-style: outside none none;
+        }
+        button{
+            margin: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" onsubmit="saveToLocalStorage(event)">
+        <label for="expenses">Expenses:</label><br>
+        <input id="expenses" type="number" name="expenses" value="" ><br><br>
+        <label for="description">Description:</label><br>
+        <input id="description" type="text" name="description" value="" ><br><br>
+        <div>
+            <label for="type">Choose Expense Type:</label>
+            <select name="expense-type" id="expense-type" required>
+                <option value="">--Select Expense Type--</option>
+                <option value="Bills">Bills</option>
+                <option value="Recharge">Recharge</option>
+                <option value="Travel">Travel</option>
+                <option value="Food">Food</option>
+            </select><br><br>
+        </div>
+       
+        <!-- <button type="button" onclick="saveToLocalStorage(event)">Add Expenses</button> -->
+        <input id="add-btn" type="submit" value="Add Expenses">
+    </form>
+    <div class="expense-container">
+        <ul class="expense-list">
+           
+            
+            
+        </ul>
+    </div>
+    
+    <script type="text/javascript" src="expense-tracker.js"></script>
+</body>
+</html>
